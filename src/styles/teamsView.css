@@ -1,0 +1,12 @@
+.teamSection {
+  text-align: start;
+}
+
+.teamsList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
