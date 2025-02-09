@@ -3,10 +3,34 @@
 }
 
 .teamsList {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.intern-team-card {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.img-logo-team-container {
+  width: 20%;
+}
+
+.img-logo-team-card {
+  width: 100%;
+}
+
+.team-info-card-container {
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+.go-to-team-btn {
+  text-align: end;
 }

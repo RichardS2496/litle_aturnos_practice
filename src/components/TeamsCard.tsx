@@ -14,13 +14,21 @@ export function TeamsCard({ team }: TeamsCardProps) {
 
   return (
     <div className="team-card">
-      <div>
-        <img src={`${teamsLogo}/${team.logo}`} alt="Logo del equipo aTurnos" />
+      <div className="intern-team-card">
+        <div className="img-logo-team-container">
+          <img
+            className="img-logo-team-card"
+            src={`${teamsLogo}/${team.logo}`}
+            alt="Logo del equipo aTurnos"
+          />
+        </div>
+        <div className="team-info-card-container">
+          <h2>{team.name}</h2>
+          <p>{team.id_aturno}</p>
+        </div>
       </div>
-      <div>
-        <h2>{team.name}</h2>
-      </div>
-      <p></p>
+
+      <button className="go-to-team-btn">Ir al equipo</button>
     </div>
   );
 }
